@@ -7,6 +7,10 @@ body {
     font-family: "iranyekanwebregular", 'Courier New', Courier, monospace;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -76,6 +80,7 @@ header {
     z-index: 100;
     width: 100%;
     font-family: YekanBakhMedium;
+    transform: translateY(-100%);
 }
 
 .cross-icon {
@@ -105,6 +110,50 @@ header {
 
 .hamburger-menu-items a {
     text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 3px 0;
+}
+
+.hamburger-menu-items div {
+    height: 1px;
+    background-color: #dfe1e4;
+    width: 90%;
+    margin: 8px 0;
+}
+
+.more-item {
+    display: flex;
+    background-color: #eee;
+    padding: 20px 40px;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.more-item img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.more-item a {
+    color: #28457b;
+    font-size: 0.85rem;
+}
+
+.show-hamburger-menu {
+    animation: fadeInDown 0.35s forwards;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1200px) {
