@@ -216,12 +216,25 @@ header {
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: -3;
+}
+
+.wave {
+    background-size: cover;
+    position: absolute;
+    width: 700px;
+    height: 534px;
+    bottom: 80px;
+    left: 140px;
+    z-index: -1;
 }
 
 .banner-text h3 {
     font-family: YekanBakhHeavy;
     font-size: 2rem;
     color: #fff;
+    z-index: 0;
 }
 
 .banner-text p {
@@ -229,14 +242,17 @@ header {
     font-size: 1.15rem;
     margin: 25px 0;
     line-height: 2.5rem;
+    z-index: 0;
 }
 
 .banner-image {
     width: 500px;
+    z-index: 0;
 }
 
 .banner-butten {
     margin-top: 60px;
+    z-index: 0;
 }
 
 .register {
@@ -268,18 +284,55 @@ header {
     justify-content: center;
     position: relative;
     bottom: 58px;
+    z-index: 4;
 }
 
 .go-down div {
     background-image: url(../images/arrowbottom.svg);
     width: 164px;
     height: 78px;
+    z-index: 4;
 }
 
 .go-down img {
     width: 15px;
     position: relative;
     top: -60px;
+    z-index: 4;
+}
+
+.online-payment {
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.online-payment img {
+    width: 450px;
+    height: 480px;
+}
+
+.section-text {
+    margin: 30px 0;
+    width: 530px;
+}
+
+.section-text h2 {
+    color: #747480;
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+
+.section-text h3 {
+    color: #303030;
+    font-family: YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 5px 0 10px;
 }
 
 @keyframes showup {
