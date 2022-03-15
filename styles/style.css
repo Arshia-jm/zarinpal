@@ -178,6 +178,11 @@ header {
     position: relative;
 }
 
+.product-menu a:hover {
+    background-color: rgba(232, 239, 254, 0.6);
+    border-radius: 12px;
+}
+
 .product-menu {
     position: absolute;
     top: 0;
@@ -252,7 +257,7 @@ header {
 
 .banner-butten {
     margin-top: 60px;
-    z-index: 0;
+    z-index: 4;
 }
 
 .register {
@@ -335,6 +340,47 @@ header {
     margin: 5px 0 10px;
 }
 
+.section-text p {
+    color: #303030;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    line-height: 40px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 20ox;
+    margin-top: 16px;
+}
+
+.section-links {
+    margin-top: 40px;
+    display: flex;
+}
+
+.section-links .first-butten {
+    font-family: YekanBakhMedium;
+    color: #000;
+    background-color: #ffd900;
+    padding: 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.section-links .second-butten {
+    font-size: 0.9rem;
+    font-family: YekanBakhMedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.section-links .second-butten img {
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
 @keyframes showup {
     0% {
         opacity: 0;
@@ -367,6 +413,9 @@ header {
     }
     .banner-image img {
         width: 430px;
+    }
+    .online-payment {
+        width: 940px;
     }
 }
 
@@ -407,6 +456,14 @@ header {
         margin-top: 40px;
         margin-bottom: 20px;
     }
+    .online-payment {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wave {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -421,8 +478,21 @@ header {
         display: block;
     }
     .banner {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+    }
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+        position: absolute;
+        right: -100;
+    }
+    .online-payment img {
+        width: 460px;
+        height: 480px;
     }
 }
 
@@ -436,5 +506,9 @@ header {
     }
     .banner-text p {
         text-align: justify;
+        margin: 4px;
+    }
+    .online-payment .section-image {
+        display: none;
     }
 }
