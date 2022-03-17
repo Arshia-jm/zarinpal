@@ -23,6 +23,7 @@ header {
     top: 0;
     backdrop-filter: blur(20px);
     transition: all 0.3s ease;
+    z-index: 2;
 }
 
 .logo {
@@ -289,21 +290,21 @@ header {
     justify-content: center;
     position: relative;
     bottom: 58px;
-    z-index: 4;
+    z-index: 1;
 }
 
 .go-down div {
     background-image: url(../images/arrowbottom.svg);
     width: 164px;
     height: 78px;
-    z-index: 4;
+    z-index: 1;
 }
 
 .go-down img {
     width: 15px;
     position: relative;
     top: -60px;
-    z-index: 4;
+    z-index: 1;
 }
 
 .online-payment {
@@ -419,6 +420,11 @@ header {
     }
 }
 
+.zarin-link {
+    width: 4100px;
+    height: 4000px;
+}
+
 @media (max-width: 990px) {
     header {
         width: auto;
@@ -464,6 +470,9 @@ header {
     .wave {
         display: none;
     }
+    .section-text {
+        width: 95%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -480,15 +489,12 @@ header {
     .banner {
         margin-left: 15px;
         margin-right: 15px;
-        position: relative;
     }
     .section-text {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 800px;
-        position: absolute;
-        right: -100;
     }
     .online-payment img {
         width: 460px;
@@ -510,5 +516,12 @@ header {
     }
     .online-payment .section-image {
         display: none;
+    }
+    .section-text {
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3 {
+        font-size: 1.5rem;
     }
 }
