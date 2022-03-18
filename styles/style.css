@@ -703,7 +703,7 @@ footer .footer-links {
     .banner-text {
         text-align: center;
         position: relative;
-        /* right: 100px; */
+        right: 50px;
     }
     .banner-text p {
         margin: 5px 0;
